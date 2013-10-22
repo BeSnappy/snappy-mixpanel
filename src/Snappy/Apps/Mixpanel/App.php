@@ -35,6 +35,13 @@ class App extends BaseApp implements ContactCreatedHandler, IncomingMessageHandl
 	public $icon = 'mixpanel.png';
 
 	/**
+	 * The application service's main website.
+	 *
+	 * @var string
+	 */
+	public $website = 'https://mixpanel.com';
+
+	/**
 	 * The application author name.
 	 *
 	 * @var string
