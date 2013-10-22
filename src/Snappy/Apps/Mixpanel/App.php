@@ -54,8 +54,8 @@ class App extends BaseApp implements ContactCreatedHandler, IncomingMessageHandl
 	 * @var array
 	 */
 	public $settings = array(
-		array('name' => 'token', 'type' => 'text', 'help' => 'Enter your API Token'),
-		array('name' => 'event', 'placeholder' => 'Support Request', 'type' => 'text', 'help' => 'Mixpanel event name for new requests'),
+		array('name' => 'token', 'type' => 'text', 'help' => 'Enter your API Token', 'validate' => 'required'),
+		array('name' => 'event', 'placeholder' => 'Support Request', 'type' => 'text', 'help' => 'Mixpanel event name for new requests', 'validate' => 'required'),
 	);
 
 	/**
